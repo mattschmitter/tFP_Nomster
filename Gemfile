@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 1.2'
 # Add Twitter Bootstrap 3
 gem 'bootstrap-sass', '~> 3.3.5'
 
+# Add Kaminari for pagination
+gem 'kaminari'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
