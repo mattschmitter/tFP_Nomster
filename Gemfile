@@ -33,6 +33,9 @@ gem 'bootstrap-sass', '~> 3.3.5'
 # Add Kaminari for pagination
 gem 'kaminari'
 
+# Add SimpleForm
+gem 'simple_form'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
