@@ -8,6 +8,14 @@ body {
 	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+a {
+	color: #00b023;
+}
+
+a:hover {
+	color: #00971e;
+}
+
 .navbar.navbar-inverse {
 	background: url('/assets/stardust_2.png');
 	border-radius: 0;
