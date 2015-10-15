@@ -120,7 +120,7 @@
 				<b><%= comment.humanized_rating %></b> -
 			<% end %>
 			<%= comment.message %>
-			<small><%= comment.user.email %></small>
+			<small><%= comment.user.email.truncate(10) %></small>
 		</blockquote>
 	</div>
 <% end %>

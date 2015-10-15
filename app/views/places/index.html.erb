@@ -12,7 +12,7 @@
 			<p><%= place.description %></p>
 
 			<% if place.user.present? %>
-				<small><%= place.user.email %></small>
+				<small><%= place.user.email.truncate(10) %></small>
 			<% end %>
 
 			<% if place.comments.present? %>
@@ -21,7 +21,7 @@
 						<b><%= place.comments.last.humanized_rating %></b> -
 					<% end %>
 					<%= place.comments.last.message %>
-					<small><%= place.comments.last.user.email %></small>
+					<small><%= place.comments.last.user.email.truncate(10) %></small>
 				</blockquote>
 			<% end %>
 		</div>
