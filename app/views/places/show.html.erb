@@ -86,3 +86,8 @@
 	</div>
 <% end %>
 
+<%= simple_form_for @photo, :url => place_photos_path(@place) do |p| %>
+	<%= p.input :caption %>
+	<%= p.submit "Add photo", :class => 'btn btn-success' %>
+<% end %>
+
