@@ -91,6 +91,11 @@ blockquote p {
   display: inline;
 }
 
+.photos {
+	padding: 15px;
+	text-align: center;
+}
 .placephoto {
+	max-height: 50%;
 	max-width: 100%;
 }

@@ -50,6 +50,9 @@ gem 'figaro', '>= 1.0.0'
 # Add CarrierWave for photos
 gem 'carrierwave'
 
+# Add fog
+gem 'fog', '~> 1.3.1'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
