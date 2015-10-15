@@ -1,7 +1,7 @@
 <% @places.each do |place| %>
 <div class="booyah-box col-xs-10 col-xs-offset-1">
 	<div class="row">
-		<% if place.photos.last.present? %>
+		<% if place.photos.last.present? && place.photos.last.picture.present? %>
 		<div class="col-sm-6">
 		<% else %>
 		<div class="col-xs-12">
@@ -27,7 +27,7 @@
 		</div>
 
 
-		<% if place.photos.last.present? %>
+		<% if place.photos.last.present? && place.photos.last.picture.present? %>
 			<div class="col-sm-6">
 				<%= image_tag place.photos.last.picture, :class => "placephoto" %><br />
 				<small><%= place.photos.last.caption %></small>
