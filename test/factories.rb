@@ -7,7 +7,18 @@ FactoryGirl.define do
 	end
 
 	factory :user do
-		email "email@email.com"
-		password "12345678"
+		sequence :email do |n|
+			"email#{n}@email.com"
+		end
+		password "pswrd12345678"
+		password_confirmation "pswrd12345678"
+
 	end
+
+	factory :comment do
+		message "Great comment"
+		rating "five stars"
+		association :place
+	end
+
 end

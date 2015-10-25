@@ -6,7 +6,7 @@ class CommentsControllerTest < ActionController::TestCase
 		user = FactoryGirl.create(:user)
 		sign_in user
 
-		place = FactoryGirl.create(:place, :user => user)             
+		place = FactoryGirl.create(:place)             
 
 		assert_difference "Comment.count" do
 			post :create, :place_id => place.id, :comment => {
